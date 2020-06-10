@@ -10,7 +10,11 @@
  * @license BSD http://silverstripe.org/BSD-license
  */
 
-class i18nEnum extends Enum
+namespace i18nEnum\Form\FieldType;
+
+use SilverStripe\ORM\FieldType\DBEnum;
+
+class i18nEnum extends DBEnum
 {
 
     /**
