@@ -8,8 +8,8 @@
 		"email": "elvinas@unisolutions.eu"
 	}],
 	"require": {
-		"silverstripe/framework": "~4.0.*"
-	},
+        "silverstripe/framework": "~4.0"
+    },
 	"minimum-stability": "dev",
 	"extra": {
 		"installer-name": "i18nenum"
