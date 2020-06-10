@@ -1,6 +1,6 @@
 {
 	"name": "unisolutions/silverstripe-i18nenum",
-	"type": "silverstripe-module",
+    "type": "silverstripe-vendormodule",
 	"description": "Translatable Enum fieldtype for Silverstripe.",
 	"keywords": ["silverstripe", "enum", "i18n", "translatable"],
 	"authors": [{
