@@ -25,7 +25,7 @@ class i18nEnum extends DBEnum
     /**
      *  set i18n namespace to the table name
      */
-    public function setValue($value, $record = null)
+    public function setValue($value, $record = null, $markChanged = true)
     {
         parent::setValue($value, $record);
         if (is_array($record)) {
