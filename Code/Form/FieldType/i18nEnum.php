@@ -20,7 +20,7 @@ class i18nEnum extends DBEnum
     /**
      *  used form i18n namespace, we'll set it to the table name
      */
-    private $DbObjectName = 'Enum';
+    private $DbObjectName = 'DBEnum';
 
     /**
      *  set i18n namespace to the table name
