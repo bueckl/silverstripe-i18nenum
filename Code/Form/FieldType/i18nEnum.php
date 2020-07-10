@@ -69,6 +69,9 @@ class i18nEnum extends DBEnum
      */
     public static function getTranslatedValue($namespace, $name, $value)
     {
-        return _t($namespace.'.db_'.$name.'_'.$value, $value);
+        if(!$value) {
+            return $value;
+        }
+        return _t($namespace.$name, $value);
     }
 }
