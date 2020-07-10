@@ -1,0 +1,4 @@
+
+SilverStripe\Core\Injector\Injector:
+  i18nEnum:
+    class: i18nEnum\Form\FieldType\i18nEnum
