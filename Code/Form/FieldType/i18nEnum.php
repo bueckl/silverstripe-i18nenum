@@ -44,12 +44,15 @@ class i18nEnum extends DBEnum
         $translated_options = array();
 
         $options = $hasEmpty ? array_merge(array('' => ''), $this->enum) : $this->enum;
+
+
         if (!empty($options)) {
             foreach ($options as $value) {
-                $translated_options[$value] = self::getTranslatedValue($this->DbObjectName, $this->getName(), $value);
+                
+                $translated_options[$value] = self::getTranslatedValue($this->tableName, $this->getName(), $value);
             }
         }
-
+        
         return $translated_options;
     }
 
@@ -71,7 +74,7 @@ class i18nEnum extends DBEnum
     {
         if(!$value) {
             return $value;
-        }
-        return _t($namespace.$name, $value);
+        }        
+        return _t($namespace.'.db_'.$name.'_'.$value, $value);
     }
 }
